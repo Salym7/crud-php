@@ -5,7 +5,6 @@ $good = mysqli_query($connect, "SELECT * FROM `goods` WHERE `id`='$goods_id'");
 $good = mysqli_fetch_assoc($good);
 $comments = mysqli_query($connect, "SELECT * FROM `comments`");
 $comments = mysqli_fetch_all($comments);
-// print_r($comments);  
 function filter_by_second_value($arr)
 {
     global $goods_id;
